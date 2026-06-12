@@ -402,3 +402,25 @@ body {
 .event-tag:hover {
     background-color: #4a9e3f;
 }
+
+.about-page-intro {
+    background-color:#f4f6f9;
+    padding: 70px 80px 50px;
+    display:flex;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+.about-main-text h1 {
+    font-family: Georgia;
+    color: #0d1b3e;
+    font-size: 46px;
+    margin-bottom: 28px;
+}
+
+.about-main-text p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
