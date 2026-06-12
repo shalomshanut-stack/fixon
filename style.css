@@ -872,3 +872,20 @@ body {
         box-shadow: 0 0 0 0 rgba(74, 158, 63, 0);
     }
 }
+
+.tired h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    background-color: white;
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.tired p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+    margin-top: 20px;
+}   
+
