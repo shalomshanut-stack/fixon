@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Admissions - Cedarston</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+        <!-- NavigationBAR -->
+        <div class="navbar">
+           <div class="nav-logo">
+              <img src="logo.png" alt="Cedarston Logo">
+              <p>Cedarston Int. Christian School</p>
+          </div>
+
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="academics.html">Academics</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="admission-page">
+          <div class="admission-form-box" id="formBox">
+            <h2>Application Form </h2>
+
+            <form id="applicationForm">
+              <input type="text" id="studentName" placeholder="Student Full Name" required>
+              <input type="text" placeholder="Parent / Guardian Name" required>
+              <input type="email" placeholder="Parent Email" required>
+              <select required>
+                <option value="">Grade Applying For</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+              </select>
+
+              <textarea placeholder="Tell us briefly about the student" required></textarea>
+
+              <button type="submit">Submit Application</button>
+            </form>
+          </div>
+
+          <div class="admission-message" id="messageBox">
+           <h1>Submission Received.</h1>
+           <p>Your application has been received. Please wait while we review your details.</p>
+          </div>
+
+          <div class="admission-message" id="acceptedBox">
+            <h1 id="acceptedTitle">Congratulations!</h1>
+            <p>
+              You have been accepted into Cedarston International Christian School.
+              Please check your email for your official admission letter.
+           </p>
+         </div>
+       </div>
+       <script src="admissions.js"></script>
+  </body>
+</html>

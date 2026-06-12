@@ -406,21 +406,469 @@ body {
 .about-page-intro {
     background-color:#f4f6f9;
     padding: 70px 80px 50px;
-    display:flex;
-    gap: 70px;
-    align-items: flex-start;
+}
+
+.about-main-text {
+    max-width:850px;
+    margin:auto;
 }
 
 .about-main-text h1 {
     font-family: Georgia;
     color: #0d1b3e;
     font-size: 46px;
+    font-weight: bold;
     margin-bottom: 28px;
 }
 
 .about-main-text p {
+   font-size: 14px;
+   line-height: 1.9;
+   color:#0d1b3e;
+   margin-bottom: 32px;
+}
+
+
+
+.about-quote-banner {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    background-color: #0d1b3e;
+}
+
+.about-quote-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+    display: block;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    max-width: 720px;
+}
+
+.quote-overlay h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: white;
+    font-size: 36px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+}
+
+.quote-overlay p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+.about-values {
+    background-color: white;
+    padding: 80px;
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+.values-text {
+    flex: 1;
+}
+
+.values-text h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    font-size: 42px;
+    margin-bottom: 22px;
+}
+
+.values-text p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.values-grid {
+    flex: 1.4;
+    display: flex;
+    gap: 20px;
+}
+
+.value-card {
+    background-color: #f4f6f9;
+    padding: 28px 24px;
+}
+
+.value-card h3 {
+    color: #0d1b3e;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.value-card p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+.about-community {
+    background-color: #f4f6f9;
+    padding: 80px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.community-img {
+    flex: 1;
+    position: relative;
+    background-color: #0d1b3e;
+    overflow: hidden;
+}
+
+.community-img img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.65;
+}
+
+.community-text {
+    flex: 1;
+}
+
+.community-text h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+
+.community-text p {
     color: #555;
     font-size: 14px;
     line-height: 1.9;
     margin-bottom: 18px;
+}
+
+
+.mission-vision {
+    max-width: 850px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.mission-vision div {
+    background-color: white;
+    padding: 28px;
+}
+
+.mission-vision h2,
+.about-achievements h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.mission-vision p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+    align-items: center;
+}
+
+.about-achievements {
+    max-width: 850px;
+    margin: 40px auto 0;
+    background-color: white;
+    padding: 28px;
+}
+
+.about-achievements ul {
+    padding-left: 20px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.school-motto {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    color: #0d1b3e;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    color: rgba(13, 27, 62, 0.55);
+}
+
+.academic-pathway {
+    background-color: white;
+    padding: 80px;
+}
+
+.academic-pathway h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    font-size: 42px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.pathway-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.pathway-card {
+    background-color: #f4f6f9;
+    padding: 30px;
+}
+
+.pathway-card span {
+    display: block;
+    color: #4a9e3f;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pathway-card h3 {
+    color: #0d1b3e;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.pathway-card p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.academics-intro {
+    background-color: #f4f6f9;
+    padding: 80px;
+}
+
+.academics-intro-image {
+    flex: 1;
+    background-color: #0d1b3e;
+    overflow: hidden;
+}
+
+.academics-intro-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.7;
+}
+
+.academics-main-text {
+    max-width: 850px;
+    margin: auto;
+}
+
+.academics-main-text h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    font-size: 46px;
+    margin-top: 35px;
+    margin-bottom: 28px;
+}
+
+.academics-main-text p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.events-page-section {
+    background-color: white;
+    padding: 70px 80px;
+}
+
+.events-page-section h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.events-page-section .events-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.events-page-intro {
+    background-color: #f4f6f9;
+    padding: 80px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-main-text {
+    width: 620px;
+}
+
+.events-main-text h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    font-size: 46px;
+    margin-bottom: 28px;
+}
+
+.events-main-text p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.events-photo-row {
+    max-width: 850px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.events-photo-row img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.82;
+}
+
+.admission-page {
+    background-color: #f4f6f9;
+    padding: 80px;
+    min-height: 80vh;
+}
+
+.admission-form-box,
+.admission-message {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+}
+
+.admission-form-box h2,
+.admission-message h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #0d1b3e;
+    font-size: 42px;
+    margin-bottom: 28px;
+}
+
+.admission-form-box input,
+.admission-form-box select,
+.admission-form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #d5dbe8;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.admission-form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #d5dbe8;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.admission-form-box textarea {
+    height: 120px;
+    resize: none;
+}
+
+.admission-form-box button {
+    background-color: #0d1b3e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admission-form-box button:hover {
+    background-color: #4a9e3f;
+}
+
+.admission-message {
+    display: none;
+    text-align: center;
+}
+
+.admission-message p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.admission-form-box select {
+    color: #555;
+    background-color: #dce8fb;
+}
+
+.apply-now-bubble {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    width: 86px;
+    height: 86px;
+    background-color: #4a9e3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    box-shadow: 0 8px 24px rgba(13, 27, 62, 0.25);
+    animation: pulseApply 1.8s infinite;
+    z-index: 1000;
+}
+
+.apply-now-bubble:hover {
+    background-color: #0d1b3e;
+}
+
+@keyframes pulseApply {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(74, 158, 63, 0.45);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 16px rgba(74, 158, 63, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(74, 158, 63, 0);
+    }
 }
